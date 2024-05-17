@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="create-todo">
+        <h1>CREATE A TODO</h1>
+        <form id="new-todo-form">
+          <h3>What's on your todo list?</h3>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="e.g.Do home work"
+          />
+          <h3>Pick a category</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="category" id="category1" value="Home" />
+              <span class="bubble home"></span>
+              <div>Home</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category3"
+                value="Health"
+              />
+              <span class="bubble health"></span>
+              <div>Health</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category4"
+                value="learning"
+              />
+              <span class="bubble learning"></span>
+              <div>Learning</div>
+            </label>
+          </div>
+          <input type="submit" value="Add todo" />
+         
+        </form>
+      </section>
+      <section class="todo-list">
+        <h2>Todo List</h2>
+        <!--task counter-->
+        <div id="task-count">Total Tasks: 0</div>
+        <div class="list" id="todo-list"><div class="todo-item done">
+          <label>
+            <input type="checkbox">
+          <span class="bubble home"></span>   
+            </label>
+            <div class="todo-content">
+              <input type="text" value="Garden work" readonly>
+              </div>
+              <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>Developed by Bhavya Nagasri &copy; 2024</footer>
+    <!--script-->
+    <script src="script.js"></script>
+  </body>
+</html>
